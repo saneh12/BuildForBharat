@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #DCF4EA;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin: 30px;
+  }
+
+  .half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 36px;
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .half:hover {
+    background-color: #48BE90;
+    /* transform: scale(1.05); */
+  }
+
+  .insert {
+    background-color: #5FE3AF;
+    background-image: url("/public/images/Good\ team-bro.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position:center; 
+    width: 100%;
+    height: 50%;
+  }
+
+  .search {
+    background-color: #96E4C5; 
+    background-image: url("/public/images/Usability\ testing-amico.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position:center; 
+    width: 100%;
+    height: 50%;
+  }
