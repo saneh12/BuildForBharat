@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONDC Searching and Inserting</title>
+  <link rel="stylesheet" href="/public/stylesheets/insertsearchstyle.css">
+</head>
+<body>
+  <h1>ONDC Searching and Inserting</h1>
+  <div class="half insert" onclick="location.href='insert.html'" id="insert">
+    Insert Merchant and Pincode
+  </div>
+  <div class="half search" onclick="location.href='search.html'" id="search">
+    Search Merchant 
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var tl = gsap.timeline();
+  
+    tl.from("h1", {
+      y: -100,
+      opacity: 0,
+      delay: 0.2,
+    });
+  
+    tl.from(".half.insert, .half.search", {
+      y: 70,
+      opacity: 0,
+      stagger: 0.2,
+    });
+  </script>
+  
+</body>
+</html>

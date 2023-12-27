@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insert Merchant and Pincode</title>
+  <link rel="stylesheet" href="/public/stylesheets/insertstyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="half insert">
+      <h1>Insert Merchant and Pincode</h1>
+      <label for="merchantInput">Merchant:</label>
+      <input type="text" id="merchantInput" placeholder="Enter merchant">
+      <label for="pincodeInput">Pincode:</label>
+      <input type="text" id="pincodeInput" placeholder="Enter pincode">
+      <button onclick="submitForm('insert')">Submit</button>
+    </div>
+    <div class="img">
+      <img src="/public/images/Website Creator-bro.png" alt="">
+    </div>
+  </div>
+
+  <script>
+    function submitForm(type) {
+      var merchantValue = document.getElementById('merchantInput').value;
+      var pincodeValue = document.getElementById('pincodeInput').value;
+
+      if (type === 'insert') {
+        alert('Inserting merchant: ' + merchantValue + ' and pincode: ' + pincodeValue);
+        // Add logic to handle the insertion
+      }
+      // Add logic for other types if needed
+    }
+  </script>
+</body>
+</html>

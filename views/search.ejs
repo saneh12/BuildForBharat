@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Merchants</title>
+  <link rel="stylesheet" href="/public/stylesheets/searchstyle.css">
+</head>
+<body>
+  <div class="container">
+  <div class="search-par">
+  <h1>Search Merchants</h1>
+  <div class="search-box">
+    <input type="text" id="merchantInput" placeholder="Enter Pincode">
+    </div>
+    <button onclick="searchMerchant()">Search</button>
+  </div>
+  <div class="img">
+    <img src="/public/images/Search engines-bro.png" alt="">
+  </div>
+  </div>
+
+  <script>
+    function searchMerchant() {
+      var merchantValue = document.getElementById('merchantInput').value;
+      alert('Searching for merchant: ' + merchantValue);
+      // Add logic for searching merchant
+    }
+  </script>
+</body>
+</html>
